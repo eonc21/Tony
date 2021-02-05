@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="side-scrolling.css">
+</head>
+
+<body>
+
+    <div class="main-container" id="main-container">
+        
+        
+        <nav class="main-nav">
+            <ul class="ul_first">
+                <li id="logo"><a href="#">Menu</a></li>
+            </ul>
+            <ul class="ul_second">
+                <li><a class="li-one" href="#">homepage</a></li>
+                <li><a class="li-two" href="#">menu</a></li>
+                <li><a class="li-three" href="#">spring</a></li>
+                <li><a class="li-four" href="#">autumn</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <section id="section-one" class="section">
+                <div class="image">
+                    <img src="space.png">
+                </div>
+
+                <div class="content">
+                    <h3>Section One</h3>
+                    <h1>One</h1>
+                    <p>Lorem ipsum dolor sit amet, viris docendi periculis vis no,
+                        sit eu facer aliquip noluisse, eam dignissim adolescens
+                        mnesarchum ea. Ei vis quis nostrud, eos ex melius eripuit
+                        facilisis. Quaeque epicuri ut sed. Aeque paulo te est,
+                        est ne nonumes copiosae gubergren. Id tibique convenire mel.
+                        Lorem ipsum dolor sit amet, viris docendi periculis vis no,
+                        sit eu facer aliquip noluisse, eam dignissim adolescens
+                        mnesarchum ea. Ei vis quis nostrud, eos ex melius eripuit
+                        facilisis. Quaeque epicuri ut sed. Aeque paulo te est,
+                        est ne nonumes copiosae gubergren. Id tibique convenire mel.
+                        Lorem ipsum dolor sit amet, viris docendi periculis vis no,
+                        sit eu facer aliquip noluisse, eam dignissim adolescens
+                        mnesarchum ea. Ei vis quis nostrud, eos ex melius eripuit
+                        facilisis. Quaeque epicuri ut sed. Aeque paulo te est,
+                        est ne nonumes copiosae gubergren. Id tibique convenire mel.
+                        Lorem ipsum dolor sit amet, viris docendi periculis vis no,
+                        sit eu facer aliquip noluisse, eam dignissim adolescens
+                        mnesarchum ea. Ei vis quis nostrud, eos ex melius eripuit
+                        facilisis. Quaeque epicuri ut sed. Aeque paulo te est,
+                        est ne nonumes copiosae gubergren. Id tibique convenire mel.</p>
+                </div>
+            </section>
+
+            <section id="section-two" class="section">
+                <div class="image">
+                    <img src="space.png">
+                </div>
+
+                <div class="content">
+                    <h3>Section Two</h3>
+                    <h1>Two</h1>
+                    <p>Lorem ipsum dolor sit amet, viris docendi periculis vis no,
+                        sit eu facer aliquip noluisse, eam dignissim adolescens
+                        mnesarchum ea. Ei vis quis nostrud, eos ex melius eripuit
+                        facilisis. Quaeque epicuri ut sed. Aeque paulo te est,
+                        est ne nonumes copiosae gubergren. Id tibique convenire mel.
+                        Lorem ipsum dolor sit amet, viris docendi periculis vis no,
+                        sit eu facer aliquip noluisse, eam dignissim adolescens
+                        mnesarchum ea. Ei vis quis nostrud, eos ex melius eripuit
+                        facilisis. Quaeque epicuri ut sed. Aeque paulo te est,
+                        est ne nonumes copiosae gubergren. Id tibique convenire mel.
+                        Lorem ipsum dolor sit amet, viris docendi periculis vis no,
+                        sit eu facer aliquip noluisse, eam dignissim adolescens
+                        mnesarchum ea. Ei vis quis nostrud, eos ex melius eripuit
+                        facilisis. Quaeque epicuri ut sed. Aeque paulo te est,
+                        est ne nonumes copiosae gubergren. Id tibique convenire mel.
+                        Lorem ipsum dolor sit amet, viris docendi periculis vis no,
+                        sit eu facer aliquip noluisse, eam dignissim adolescens
+                        mnesarchum ea. Ei vis quis nostrud, eos ex melius eripuit
+                        facilisis. Quaeque epicuri ut sed. Aeque paulo te est,
+                        est ne nonumes copiosae gubergren. Id tibique convenire mel.</p>
+                </div>
+            </section>
+
+            <section id="section-three" class="section">
+                <div class="image">
+                    <img src="space.png">
+                </div>
+
+                <div class="content">
+                    <h3>Section Three</h3>
+                    <h1>Three</h1>
+                    <p>Lorem ipsum dolor sit amet, viris docendi periculis vis no,
+                        sit eu facer aliquip noluisse, eam dignissim adolescens
+                        mnesarchum ea. Ei vis quis nostrud, eos ex melius eripuit
+                        facilisis. Quaeque epicuri ut sed. Aeque paulo te est,
+                        est ne nonumes copiosae gubergren. Id tibique convenire mel.</p>
+                </div>
+            </section>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+<script>
+var windowWidth = window.innerWidth;
+if (document.getElementById('main-container').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('main-container').addEventListener('mousewheel', myFunction, false);
+        // Firefox
+        document.getElementById('main-container').addEventListener('DOMMouseScroll', myFunction, false);
+    } else {
+        // IE 6/7/8
+        document.getElementById('main-container').attachEvent('onmousewheel', myFunction);
+    }
+// document.getElementById("main-container").onscroll = function() {myFunction()};
+function myFunction() {
+    console.log(windowWidth);
+  windowWidth = window.innerWidth;
+  console.log("aaaaaa");
+    
+    e = window.event || e;
+    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    document.getElementById('main-container').scrollLeft -= (delta * windowWidth); // Multiplied by 40
+    e.preventDefault(); 
+}
+</script>
+
+</html>
