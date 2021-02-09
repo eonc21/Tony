@@ -14,6 +14,10 @@ body {
     padding: 0;
 }
 
+p {
+    font-size: 1.3rem;
+}
+
 img {
     max-width: 100%;
     margin: 0;
@@ -288,6 +292,22 @@ nav {
  
 }
 
+#container-section-two .content {
+    text-align: center;
+}
+
+#container-section-two .content img {
+    padding: 0;
+}
+
+#container-section-two .content p {
+    padding-top: 3rem;
+}
+
+#container-section-two h1 {
+    padding: 1rem 0; 
+}
+
 #section-two img {
     padding: 3em 1em;
     width: 75%;
@@ -300,6 +320,10 @@ nav {
 
 
 @media (min-width: 700px) {
+
+    p {
+        font-size: 1.35vw;
+    }
 
     h1 {
         font-size: 5rem;
@@ -413,7 +437,7 @@ nav {
         padding-top: 0.2em;
     }
 
-    #section-two h3 {
+    #section-two h2 {
         font-size: 1.75vw;
     }
 
