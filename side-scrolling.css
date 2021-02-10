@@ -69,7 +69,6 @@ h3 {
     transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
     left: 0;
     top: 0;
-    transition: ;
     cursor: pointer;
     user-select: none;
 }
@@ -112,6 +111,7 @@ h3 {
 }
 
 .main-nav {
+    z-index: 1;
     position: fixed;
     flex-direction: column;
     align-items: center;
@@ -232,7 +232,7 @@ nav {
     background-size: cover;
 }
 
-#top {
+#top-section-one {
     height: 57%;
     width: 100%;
     background-color: #452647;
@@ -266,7 +266,7 @@ nav {
     justify-content: space-evenly;
 }
 
-#bottom {
+#bottom-section-one {
     height: 65%;
     width: 100%;
     
@@ -279,7 +279,7 @@ nav {
     background: #fff6fe;
     /* border: 1.25em solid rgb(178, 203, 245); */
     border-top: 3.5em solid #37103a;
-    border-bottom: 1.25em solid rgb(135, 155, 209);
+    border-bottom: 1.25em solid #37103a;
     
 }
 
@@ -315,7 +315,40 @@ nav {
 
 
 #section-three {
-    background: rgb(172, 177, 241);
+    background: rgb(255, 255, 255);
+    opacity: 0.9;
+    background-image: url("AdobeStock_285477707.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#container-section-three {
+    border-top: 3.5em solid #6e434d;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    
+}
+
+#bottom-section-three img {
+   bottom: 0px;
+}
+
+#top-section-three {
+    width: 100%;
+    height: 55%;
+    background-color: #6e434d;
+    background-attachment: fixed;
+    opacity: 1;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+#bottom-section-three {
+    width: 100%;
+    height: 45%;
 }
 
 
