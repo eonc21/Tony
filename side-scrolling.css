@@ -319,9 +319,8 @@ nav {
     opacity: 0.9;
     background-image: url("AdobeStock_285477707.jpeg");
     background-repeat: no-repeat;
-    background-attachment:scroll;
+    background-attachment:fixed;
     background-size: cover;
-    object-fit: cover;
 }
 
 #container-section-three {
@@ -441,6 +440,18 @@ nav {
         height: 100vh;
         justify-content: space-evenly;
         /* min-width: 1000px; */
+    }
+
+    #container-section-one {
+        background-image: url(AdobeStock_268548990.jpeg); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%; 
     }
 
     #section-one {
