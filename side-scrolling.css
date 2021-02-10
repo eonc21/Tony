@@ -365,6 +365,7 @@ nav {
 
 #top-section-three .content p {
     padding-top: 2em;
+    font-size: 4.1vw;
 }
 
 
@@ -503,6 +504,12 @@ nav {
         width: 40%;
         min-width: 270.4px;
     }
+
+    #top-section-three .content p {
+        padding-top: 2em;
+        font-size: 1.35vw;
+    }
+    
 
 
 }
