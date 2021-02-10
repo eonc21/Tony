@@ -319,8 +319,9 @@ nav {
     opacity: 0.9;
     background-image: url("AdobeStock_285477707.jpeg");
     background-repeat: no-repeat;
-    background-attachment: bottom;
+    background-attachment:scroll;
     background-size: cover;
+    object-fit: cover;
 }
 
 #container-section-three {
