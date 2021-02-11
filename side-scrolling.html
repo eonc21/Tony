@@ -28,11 +28,12 @@
 
         <div class="container">
             <section id="section-one" class="section">
+                
                 <div id="container-section-one">
                     <div id="top-section-one">
                         <div class="title-container">
-                            <h1>once upon a time in delft,</h1>
-                            <div class="subtitle-container">
+                            <h1 id="title">once upon a time in delft,</h1>
+                            <div class="subtitle-container" id="subtitle-container">
                                 <h2 id="for1">for my teammate</h2>
                                 <h2 id="for2">for the hand that pulls me out</h2>
                                 <h2 id="for3">for my small Tony.</h2>
@@ -66,10 +67,10 @@
                         <div class="content">
                             <h2>24th of October,</h2>
                             <h1>We met.</h1>
-                            <p>I messaged you asking for help with my code. Despite you being busy, 
-                            you replied. We ended up solving our self-study assignment together that night. Given
-                            the productive and fun time we had doing it, we decided to meet up the next
-                            day. We would solve the rest of the papers. </p>
+                            <p>That day marked the most productive and fun day of the current academic
+                                year. I began to realise how lonely I was before meeting you. You sent me 
+                                sweet messages thanking me as soon as you left.
+                            </p>
                         </div>
 
                     </div>
@@ -118,34 +119,47 @@
             logo.style.display="none";
             first.style.display="block";
             second.style.display="block";
-        }
-        else {
+        } else {
             logo.style.display="block";
             logo.innerHTML="menu";
             first.style.display="none";
             second.style.display="none";
+        }
 
+        if (windowHeight<=550 && windowWidth<1350) {
+            subtitle.style.display="none";
+        } else {
+            subtitle.style.display="unset";
         }    
 };
 
 window.onresize = function(event) {
         windowWidth=window.innerWidth;
-        var logo = document.getElementById("logo");
-        var first = document.getElementById("for1");
-        var second = document.getElementById("for2");
+        windowHeight=window.innerHeight;
+
+        let logo = document.getElementById("logo");
+        let first = document.getElementById("for1");
+        let second = document.getElementById("for2");
+        let third = document.getElementById("for3");
+        let subtitle = document.getElementById("subtitle-container")
 
         if (windowWidth>=700) {
             logo.style.display="none";
             first.style.display="block";
             second.style.display="block";
-        }
-        else {
+        } else {
             logo.style.display="block";
             logo.innerHTML="menu";
             first.style.display="none";
             second.style.display="none";
+        }
 
-        }    
+        if (windowHeight<=600 && windowWidth<1350) {
+            subtitle.style.display="none";
+        } else {
+            subtitle.style.display="unset";
+        }   
+
 };
 
 

@@ -14,9 +14,6 @@ body {
     padding: 0;
 }
 
-p {
-    font-size: 1.3rem;
-}
 
 img {
     max-width: 100%;
@@ -35,7 +32,6 @@ li:hover:not(#logo) {
 
 a {
     text-decoration: none;
-    /* text-transform: uppercase; */
     color: #e4b178f1;
 }
 
@@ -45,12 +41,16 @@ h1 {
 }
 
 h2 {
-    font-size: 4w;
+    font-size: 6vw;
     font-weight: 500;
 }
 
 h3 {
     font-size: 1.75vw;
+}
+
+p {
+    font-size: 4.5vw;
 }
 
 .main-container {
@@ -61,7 +61,6 @@ h3 {
 #logo {
     font-weight: 300;
     color: #e4b178f1;
-    /* background-color: #0000008a; */
     border-bottom: 1px solid #200527c5;
     padding: 0.3em 0.5em;
     margin: 0 0.5em;
@@ -157,12 +156,9 @@ h3 {
 
 .ul_second li {
     background-color: rgba(10, 10, 10, 0.6);
-    /* border-left: 1px solid rgba(254, 252, 255, 0.5);
-    border-right: 1px solid rgba(254, 252, 255, 0.5); */
 }
 
 .ul_second li:last-child {
-    /* border: 1px solid rgba(254, 252, 255, 0.5); */
     border-top: 0;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -189,7 +185,6 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .section {
@@ -199,12 +194,8 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
-nav {
-    /* background-color: rgb(255, 246, 215); */
-}
 
 .image {
     width: 100%;
@@ -216,12 +207,10 @@ nav {
 
 .content {
     width: 80%;
-    /* height: 40%; */
-    /* max-height: 500px; */
 }
 
 #container-section-one {
-    z-index: -1;
+    z-index: 0;
     height: 100vh;
     width: 100vw;
     background-image: url(AdobeStock_268548990.jpeg);
@@ -253,11 +242,6 @@ nav {
 
 }
 
-.title-container h1 {
-    align-items: center;
-    vertical-align: center;
-}
-
 .subtitle-container {
     width: 100%;
     height: 30%;
@@ -267,20 +251,14 @@ nav {
 }
 
 #bottom-section-one {
-    height: 65%;
+    height: 43%;
     width: 100%;
-    
-    /* background-color: rgba(131, 46, 46, 0.65); */
-    /* clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%); */
-    text-align: center;
 }
 
 #section-two {
     background: #fff6fe;
-    /* border: 1.25em solid rgb(178, 203, 245); */
     border-top: 3.5em solid #37103a;
     border-bottom: 1.25em solid #37103a;
-    
 }
 
 #container-section-two {
@@ -317,7 +295,7 @@ nav {
 #section-three {
     background: rgb(255, 255, 255);
     opacity: 0.9;
-    background-image: url("AdobeStock_285477707.jpeg");
+    background-image: url(AdobeStock_285477707.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -336,7 +314,7 @@ nav {
 
 #top-section-three {
     width: 100%;
-    height: 55%;
+    height: 58%;
     background-color: #6e434d;
     background-attachment: fixed;
     opacity: 1;
@@ -344,19 +322,18 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-    
-    
 }
 
 #top-section-three .content {
-    margin: 3em 1em;
     width: 80%;
-    height: 70%;
+    height: 65%;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    /* margin: 15% 0 22% 0; */
 }
 
 #top-section-three .content h1 {
@@ -364,22 +341,22 @@ nav {
 }
 
 #top-section-three .content p {
-    padding-top: 2em;
-    font-size: 4.1vw;
+    padding-top: 1.5rem;
+  
 }
 
 
 
 #bottom-section-three {
     width: 100%;
-    height: 45%;
+    height: 43%;
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 650px) {
 
     p {
-        font-size: 1.35vw;
+        font-size: 1.75vw;
     }
 
     h1 {
@@ -387,7 +364,7 @@ nav {
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     h3 {
@@ -440,13 +417,6 @@ nav {
         font-size: 1.25rem;
     }
 
-    .title-container h1 {
-        font-size: 5rem;
-    }
-
-    .subtitle-container h2 {
-        font-size: 1.75rem;
-    }
     .container {
         width: 300vw;
     }
@@ -473,8 +443,7 @@ nav {
     }
 
     #section-two img {
-        width: 25%; 
-    }
+        width: 25%;     }
 
     #section-two .content img {
         padding: 1.5em 0;
