@@ -356,7 +356,7 @@ p {
 @media (min-width: 650px) {
 
     p {
-        font-size: 1.75vw;
+        font-size: 1.5vw;
     }
 
     h1 {
@@ -447,7 +447,7 @@ p {
 
     #section-two .content img {
         padding: 1.5em 0;
-        width: 95%; 
+        width: 80%; 
         border-radius: 0%;
     }
 
@@ -455,6 +455,9 @@ p {
         width: 40%; 
         /* min-width: 35%; */
       
+    }
+    #section-two .content p {
+        padding-top: 1em;
     }
 
 
@@ -474,9 +477,31 @@ p {
         min-width: 270.4px;
     }
 
+    #top-section-three {
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+
+    #top-section-three img {
+        margin-right: 0em;
+        padding: 3em 1em;
+       width: 25%;
+       margin-bottom: 3rem;
+
+    }
+
+    #top-section-three .content {
+        top: 0;
+        margin-left: 0em;
+        width: 50%;
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
     #top-section-three .content p {
-        padding-top: 2em;
-        font-size: 1.35vw;
+        padding-top: 1em;
+        width: 100%;
+       
     }
     
 

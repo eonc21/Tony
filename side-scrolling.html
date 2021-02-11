@@ -52,7 +52,7 @@
                         <h2>23th of October,</h2>
                         <h1>I asked for your help.</h1>
                         <img src="discord.png">
-                        <p>I messaged you asking for help with my code. Despite you being busy, 
+                        <p id="paragraph">I messaged you asking for help with my code. Despite you being busy, 
                         you replied. We ended up solving our self-study assignment together that night. Given
                         the productive and fun time we had doing it, we decided to meet up the next
                         day. We would solve the rest of the papers. </p>
@@ -66,12 +66,13 @@
                     <div id="top-section-three">
                         <div class="content">
                             <h2>24th of October,</h2>
-                            <h1>We met.</h1>
+                            <h1>We met each other.</h1>
                             <p>That day marked the most productive and fun day of the current academic
                                 year. I began to realise how lonely I was before meeting you. You sent me 
                                 sweet messages thanking me as soon as you left.
                             </p>
                         </div>
+                        <img src="—Pngtree—happy jumping flat illustration_5494161.png"  id="happy-picture">
 
                     </div>
 
@@ -111,26 +112,39 @@
 
     window.onload = function(event) {
         windowWidth=window.innerWidth;
-        var logo = document.getElementById("logo");
-        var first = document.getElementById("for1");
-        var second = document.getElementById("for2");
+        windowHeight=window.innerHeight;
 
-        if (windowWidth>=700) {
+        let logo = document.getElementById("logo");
+        let first = document.getElementById("for1");
+        let second = document.getElementById("for2");
+        let third = document.getElementById("for3");
+        let subtitle = document.getElementById("subtitle-container")
+        let happyPicture = document.getElementById("happy-picture")
+
+        if (windowWidth>=650) {
             logo.style.display="none";
             first.style.display="block";
             second.style.display="block";
+            happyPicture.style.display="block";
         } else {
             logo.style.display="block";
             logo.innerHTML="menu";
             first.style.display="none";
             second.style.display="none";
+            happyPicture.style.display="none";
         }
 
         if (windowHeight<=550 && windowWidth<1350) {
             subtitle.style.display="none";
         } else {
             subtitle.style.display="unset";
-        }    
+        }     
+
+        if (windowHeight<=800) {
+            paragraph.style.display="none";
+        } else {
+            paragraph.style.display="unset";
+        }
 };
 
 window.onresize = function(event) {
@@ -141,24 +155,36 @@ window.onresize = function(event) {
         let first = document.getElementById("for1");
         let second = document.getElementById("for2");
         let third = document.getElementById("for3");
-        let subtitle = document.getElementById("subtitle-container")
+        let subtitle = document.getElementById("subtitle-container");
+        let paragraph = document.getElementById("paragraph");
+        let happyPicture = document.getElementById("happy-picture")
 
-        if (windowWidth>=700) {
+        if (windowWidth>=650) {
             logo.style.display="none";
             first.style.display="block";
             second.style.display="block";
+            happyPicture.style.display="block";
         } else {
             logo.style.display="block";
             logo.innerHTML="menu";
             first.style.display="none";
             second.style.display="none";
+            happyPicture.style.display="none";
         }
 
-        if (windowHeight<=600 && windowWidth<1350) {
+        if (windowHeight<=550 && windowWidth<1350) {
             subtitle.style.display="none";
+            paragraph.style.display="none";
         } else {
             subtitle.style.display="unset";
-        }   
+        } 
+
+        if (windowHeight<=700) {
+            paragraph.style.display="none";
+        } else {
+            paragraph.style.display="block";
+        }
+        
 
 };
 
