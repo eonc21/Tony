@@ -215,7 +215,7 @@ p {
     width: 100vw;
     background-image: url(AdobeStock_173426825.jpeg);
     opacity: 0.9;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
