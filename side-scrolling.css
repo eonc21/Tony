@@ -213,12 +213,12 @@ p {
     z-index: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url(AdobeStock_178708554.jpeg);
+    background-image: url(phonesection1.jpeg);
     opacity: 0.9;
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100vw auto;
+    background-size: 100vw 100vh;
 }
 
 #top-section-one {
