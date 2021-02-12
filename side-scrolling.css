@@ -213,12 +213,12 @@ p {
     z-index: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url(AdobeStock_173426825.jpeg);
+    background-image: url(AdobeStock_178708554.jpeg);
     opacity: 0.9;
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100vw auto;
 }
 
 #top-section-one {
@@ -375,7 +375,9 @@ p {
     }
 
     #container-section-one {
-        background-image: url(AdobeStock_268548990.jpeg);
+        background: url(AdobeStock_268548990.jpeg) center center fixed no-repeat;
+        background-size: cover;
+        
     }
 
     .main-nav,
