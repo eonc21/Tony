@@ -45,7 +45,7 @@
             </section>
 
             <section id="section-two" class="section">
-                <div id="container-section-two">
+                <div id="container-section-two" class="nigga">
                     <img src="drawing-woman-colour-1200.png">
 
                     <div class="content">
@@ -62,7 +62,7 @@
             </section>
 
             <section id="section-three" class="section">
-                <div id="container-section-three">
+                <div id="container-section-three" class="nigga">
                     <div id="top-section-three">
                         <div class="content">
                             <h2>24th of October,</h2>
@@ -73,12 +73,51 @@
                             </p>
                         </div>
                         <img src="—Pngtree—happy jumping flat illustration_5494161.png"  id="happy-picture">
-
                     </div>
-
                     <div id="bottom-section-three">
-                       
+                    </div>
+                </div>
 
+            </section>
+
+            <section id="section-four" class="section">
+                <div id="container-section-four" class="nigga">
+                    <!-- <img src="drawing-woman-colour-1200.png"> -->
+
+                    <div class="content">
+                        <h2>13th of November,</h2>
+                        <h1>We kissed.</h1>
+                        <p id="paragraph-four">After weeks of hanging out all the time, the circumstances
+                            led us to a kiss, unlocking the a whole new level. Not just simple, boring weeks, but days full of "the unknown". 
+                            We saw each other at our lowest, letting our defenses down and allowing 
+                            ourselves to be vulnerable.
+                        </p>
+                        <br>
+                        <p>
+                            Everything we did felt natural, like a second nature. We shared moments of weakness, 
+                            misery, stress. You calmed down my chaos. The difficulties of everyday life were
+                            now distributed among two people; we tackled everything as a team.
+                        </p>
+                    </div>
+                        <img src="unlock-800px.png">
+                </div>
+            </section>
+
+            <section id="section-five" class="section">
+                <div id="container-section-five" class="nigga">
+                    <div id="top-section-five">
+                        
+                    </div>
+                    <div id="bottom-section-five">
+                        <div class="content">
+                            <h2>24th of October,</h2>
+                            <h1>We met each other.</h1>
+                            <p>That day marked the most productive and fun day of the current academic
+                                year. I began to realise how lonely I was before meeting you. You sent me 
+                                sweet messages thanking me as soon as you left.
+                            </p>
+                        </div>
+                        <img src="—Pngtree—happy jumping flat illustration_5494161.png"  id="happy-picture">
                     </div>
                 </div>
 
@@ -87,6 +126,7 @@
     </div>
 </body>
 
+y
 <script>
     var windowWidth = window.innerWidth;
     if (document.getElementById('main-container').addEventListener) {
@@ -119,6 +159,8 @@
         let second = document.getElementById("for2");
         let third = document.getElementById("for3");
         let subtitle = document.getElementById("subtitle-container")
+        let paragraph = document.getElementById("paragraph");
+
         let happyPicture = document.getElementById("happy-picture")
 
         if (windowWidth>=650) {
@@ -143,7 +185,7 @@
         if (windowHeight<=700 && windowWidth<300) {
             paragraph.style.display="none";
         } else {
-            paragraph.style.display="inherit";
+            paragraph.style.display="block";
         }
 };
 
@@ -182,7 +224,7 @@ window.onresize = function(event) {
         if (windowHeight<=700 && windowWidth<300) {
             paragraph.style.display="none";
         } else {
-            paragraph.style.display="inherit";
+            paragraph.style.display="block";
         }
         
 

@@ -255,51 +255,63 @@ p {
     width: 100%;
 }
 
-#section-two {
+.section:nth-child(2n) {
     background: #fff6fe;
     border-top: 3.5em solid #37103a;
     border-bottom: 1.25em solid #37103a;
 }
 
-#container-section-two {
+.section:nth-child(2n) .nigga {
     z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
- 
 }
 
-#container-section-two .content {
-    text-align: center;
-}
-
-#container-section-two .content img {
-    padding: 0;
-}
-
-#container-section-two .content p {
-    padding-top: 3rem;
-}
-
-#container-section-two h1 {
-    padding: 1rem 0; 
-}
-
-#section-two img {
+.section:nth-child(2n) img {
     padding: 3em 1em;
     width: 75%;
 }
 
+.section:nth-child(2n) .nigga .content {
+    text-align: center;
+}
 
-#section-three {
+.section:nth-child(2n) .nigga .content img {
+    padding: 0;
+}
+
+.section:nth-child(2n) .nigga .content p {
+    padding-top: 3rem;
+}
+
+.section:nth-child(2n) .nigga h1 {
+    padding: 1rem 0; 
+}
+
+.section:nth-child(2n+3) {
+    background: rgb(255, 255, 255);
+    opacity: 0.9;
+    background-image: url(AdobeStock_173426825.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section:nth-child(2n+3) #bottom-section-five {
+
+}
+
+
+/* #section-three {
     background: rgb(255, 255, 255);
     opacity: 0.9;
     background-image: url(AdobeStock_285477707.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
+} */
 
 #container-section-three {
     z-index: 0;
@@ -351,6 +363,19 @@ p {
     height: 43%;
 }
 
+#container-section-four h2 {
+    padding-top: 2rem ;
+}
+
+#container-section-four p {
+    padding-top: 0.5rem ;
+}
+
+#paragraph-four {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid black;
+}
+
 
 @media (min-width: 650px) {
 
@@ -377,6 +402,8 @@ p {
     #container-section-one {
         background: url(AdobeStock_268548990.jpeg) center center fixed no-repeat;
         background-size: cover;
+        overflow-y: hidden;
+
         
     }
 
@@ -423,7 +450,8 @@ p {
     }
 
     .container {
-        width: 300vw;
+        width: 500vw ;
+
     }
 
     .section {
@@ -508,6 +536,29 @@ p {
         width: 100%;
        
     }
+
+
+    .section:nth-child(2n) .nigga {
+        width: 90%;
+        height: 90%;
+        flex-direction: row;
+        justify-content:space-evenly;
+        margin: 1em;
+        border: 6px solid #c7c6c6;
+        border-radius: 3%;
+    }
+
+
+    .section:nth-child(2n) .nigga img {
+        width: 35%;
+
+    }
+
+    .section:nth-child(2n) .nigga .content {
+        width: 45%;
+    }
+
+    
     
 
 
