@@ -66,7 +66,7 @@
 
             <section id="section-three" class="section">
                 <div id="container-section-three" class="nigga">
-                    <div id="top-section-three">
+                    <div id="top-section-three" class="top">
                         <div class="content">
                             <h2>24th of October,</h2>
                             <h1>We met each other.</h1>
@@ -108,25 +108,41 @@
             </section>
 
             <section id="section-five" class="section">
+
                 <div id="container-section-five" class="nigga">
-                    <div id="top-section-five">
 
-                    </div>
+                    <div id="top-section-five" class="top">
 
-                    <div id="bottom-section-five">
                         <div class="content">
                             <h2>19th of December,</h2>
                             <h1>Holidays.</h1>
+                            <p>It was finally time for a break. Well, we had a different definition for it.
+                                I had the most beautiful and warm Christmas of my life. </p>
                             <p>
+                                I've never felt like
+                                I belonged somewhere this perfectly, I didn't know such few people could
+                                consistute your family, regardless of background. We worked for ours on
+                                making an online chess game, discovering my love for frontend development.
+                            </p>
 
-                                <br>
-                                That day marked the most productive and fun day.That day marked the most productive and fun day. That day marked the most productive and fun day.
-                                That day marked the most productive and fun day. That day marked the most productive and fun day.
-                                That day marked the most productive and fun day.
+                            </p>
+                            <br>
+                            <p>
+                                Who knew that a day away could recharge your batteries? We hoped on a train
+                                and traveled to the north of the Netherlands, admiring rural life and nature
+                                for a weekend.
                             </p>
                         </div>
-                        <img src="holiday-season-7.png" id="happy-picture">
-                    </div>    
+                        <!-- <img src="holiday-season-7.png" id="happy-picture"> -->
+
+                    </div>
+
+                    <div id="bottom-section-five" class="bottom">
+
+
+                    </div>
+
+
                 </div>
 
                 <div class="snowflakes" id="snowflakes" aria-hidden="true">
@@ -202,8 +218,11 @@
         let paragraph = document.getElementById("paragraph");
 
         let happyPicture = document.getElementById("happy-picture")
+        let tempParagraph = document.getElementById("top-section-five").lastElementChild.lastElementChild;
+        console.log(tempParagraph);
 
         if (windowWidth >= 650) {
+            tempParagraph.style.display="block";
             logo.style.display = "none";
             first.style.display = "block";
             second.style.display = "block";
@@ -214,6 +233,8 @@
             first.style.display = "none";
             second.style.display = "none";
             happyPicture.style.display = "none";
+            tempParagraph.style.display="none";
+
         }
 
         if (windowHeight <= 550 && windowWidth < 1350) {
@@ -240,8 +261,11 @@
         let subtitle = document.getElementById("subtitle-container");
         let paragraph = document.getElementById("paragraph");
         let happyPicture = document.getElementById("happy-picture")
+        let tempParagraph = document.getElementById("top-section-five").lastElementChild.lastElementChild;
+
 
         if (windowWidth >= 650) {
+            tempParagraph.style.display="block";
             logo.style.display = "none";
             first.style.display = "block";
             second.style.display = "block";
@@ -252,6 +276,8 @@
             first.style.display = "none";
             second.style.display = "none";
             happyPicture.style.display = "none";
+            tempParagraph.style.display="none";
+
         }
 
         if (windowHeight <= 550 && windowWidth < 1350) {
@@ -275,7 +301,7 @@
         var section;
         var snowflakes = document.getElementById("snowflakes");
 
-        let result = function(section) {
+        let result = function (section) {
             section = document.getElementById("section-five");
 
             var top = section.offsetTop;
